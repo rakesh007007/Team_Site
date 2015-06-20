@@ -1,0 +1,8 @@
+[run]
+source = rakesh
+omit = rakesh/wsgi.py,rakesh/urls.py,rakesh/startup.py,rakesh/settings*
+branch = true
+
+[report]
+omit = rakesh/wsgi.py,rakesh/urls.py,rakesh/startup.py,rakesh/settings*
+

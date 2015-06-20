@@ -1,0 +1,23 @@
+{% extends "site_base.html" %}
+
+{% load i18n %}
+{% load teams_tags %}
+
+{% block head_title %}rakesh{% endblock %}
+
+{% block body_class %}home{% endblock %}
+
+{% block body %}
+    <h1>teams</h1>
+
+   
+
+    {% if ACCOUNT_OPEN_SIGNUP %}
+        <div>
+            <a class="btn btn-default" href="{% url 'account_signup' %}">{% trans "Sign up" %}</a>
+            or
+            <a class="btn btn-default" href="{% url 'account_login' %}">{% trans "Log in" %}</a>
+        </div>
+    {% endif %}
+
+{% endblock %}
